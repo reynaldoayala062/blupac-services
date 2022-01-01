@@ -1,6 +1,6 @@
 import { React, useState } from 'react'
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HomeElements'
-
+import { ButtonLink } from '../ButtonElements'
 
 const Home = () => {
     const [hover, setHover] = useState(false)
@@ -18,9 +18,9 @@ const Home = () => {
                 <HeroH1> Experience Reliable Professional </HeroH1>
                 <HeroP> Let us serve you </HeroP>
                 <HeroBtnWrapper>
-                    {/* <ButtonLink to="contact" onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
-                        Get In Touch {hover ? <ArrowForward /> : <ArrowRight/> }
-                    </ButtonLink> */}
+                    <ButtonLink to="contact" onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+                        Contact Us
+                    </ButtonLink>
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>
@@ -31,3 +31,8 @@ export default Home
 
 
 
+// Button with arrow on it
+
+{/* <ButtonLink to="contact" onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+    Contact Us{hover ? <ArrowForward /> : <ArrowRight/> }
+</ButtonLink> */}

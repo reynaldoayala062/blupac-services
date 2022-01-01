@@ -28,10 +28,10 @@ const Navbar = ({ toggle }) => {
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
                     <NavLogo to='/' onClick={toggleHome}>
-                        <Img src={require('../../images/LogoMakr-5oJKOS.png').default} alt=""/>
+                        <Img src={require('../../images/Clearwater transport logo png.png')} alt=""/>
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
-                        <FaBars />
+                        <FaBars color="black"/>
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
