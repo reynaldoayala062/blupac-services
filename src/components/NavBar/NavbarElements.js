@@ -86,6 +86,10 @@ export const NavLinks = styled(LinkS)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
+
+    &:hover {
+        color: #1D5EA0
+    }
 `;
 
 export const NavBtn = styled.nav`
