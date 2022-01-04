@@ -15,7 +15,7 @@ const Home = () => {
                 <VideoBg  autoPlay={true} loop={true} controls={false} playsInline muted  src="https://reys-portfolio.s3.us-east-2.amazonaws.com/Truck-Intro.mp4" type="video/mp4" ></VideoBg>
             </HeroBg>
             <HeroContent>
-                <HeroH1> Experience Reliable Professional </HeroH1>
+                <HeroH1> Experienced Reliable Professional </HeroH1>
                 <HeroP> Let us serve you </HeroP>
                 <HeroBtnWrapper>
                     <ButtonLink to="contact" onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
