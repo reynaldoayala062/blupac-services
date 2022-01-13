@@ -1,6 +1,7 @@
 import { React, useState } from 'react'
-import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HomeElements'
+import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight, MobileIcon } from './HomeElements'
 import { ButtonLink } from '../ButtonElements'
+import {AiOutlineDown} from 'react-icons/ai' 
 
 const Home = () => {
     const [hover, setHover] = useState(false)
@@ -21,6 +22,11 @@ const Home = () => {
                     <ButtonLink to="contact" onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true' smooth={true} duration={500} spy={true} exact='true' offset={-80}>
                         Contact Us
                     </ButtonLink>
+                    <MobileIcon>
+                        <AiOutlineDown color="white"/>
+                        <AiOutlineDown color="white"/>
+                        <AiOutlineDown color="white"/>
+                    </MobileIcon>
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>
